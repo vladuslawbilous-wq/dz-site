@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <!-- Вказуємо кодування символів (UTF-8 підтримує кирилицю та українські літери) -->
+  <meta charset="UTF-8">
+  
+  <!-- Забезпечує правильне відображення сайту на мобільних телефонах і планшетах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Заголовок вкладки в браузері -->
+  <title>Психолог Даниїл Міліковський | Офіційний сайт</title>
+  
+  <!-- Підключення шрифту Montserrat з Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Підключення нашого файлу стилів CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========================================== -->
+  <!-- БЛОК 1: ШАПКА САЙТУ ТА НАВІГАЦІЯ (HEADER)  -->
+  <!-- ========================================== -->
+  <header class="header">
+    <div class="container header-container">
+      
+      <!-- Логотип сайту -->
+      <a href="#" class="logo">
+        Психолог <span>Даниїл Міліковський</span>
+      </a>
+
+      <!-- Головне навігаційне меню -->
+      <nav class="nav" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Головна</a></li>
+          <li><a href="#about" class="nav-link">Про мене</a></li>
+          <li><a href="#book" class="nav-link">Моя книга</a></li>
+          <li><a href="#services" class="nav-link">Послуги</a></li>
+          <li><a href="#contacts" class="nav-link">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <!-- Кнопка відкриття форми запису у шапці -->
+      <div class="header-actions">
+        <button class="btn btn-primary js-open-modal">Записатися</button>
+        
+        <!-- Кнопка-гамбургер для мобільних пристроїв -->
+        <button class="burger-menu" id="burger-btn" aria-label="Відкрити меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- ========================================== -->
+  <!-- ОСНОВНИЙ КОНТЕНТ СТОРІНКИ (MAIN)           -->
+  <!-- ========================================== -->
+  <main>
+
+    <!-- ========================================== -->
+    <!-- БЛОК 2: ГОЛОВНИЙ ЕКРАН (HERO SECTION)      -->
+    <!-- ========================================== -->
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        
+        <!-- Ліва колонка з текстом та кнопками -->
+        <div class="hero-content">
+          <span class="badge">Практикуючий психолог</span>
+          <h1 class="hero-title">Психолог <br><span>Даниїл Міліковський</span></h1>
+          <p class="hero-description">
+            Плекаю психічне здоров'я, вірю в науково-доказову психологію і кожного свого клієнта.
+          </p>
+          <p class="hero-subdescription">
+            Є засновником психологічного онлайн-центру <strong>Mindspace</strong>, а також автором психологічної книги <em>«Хай буде дощ»</em>.
+          </p>
+          
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-secondary">Детальніше про послуги</a>
+            <button class="btn btn-primary js-open-modal">Записатися на консультацію</button>
+          </div>
+        </div>
+
+        <!-- Права колонка з фотографією -->
+        <div class="hero-image-wrapper">
+          <div class="image-card">
+            <img src="фотосайт.jpg" alt="Психолог Даниїл Міліковський" class="hero-img">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- БЛОК 3: БЛОК "ПРО МЕНЕ" (ABOUT SECTION)    -->
+    <!-- ========================================== -->
+    <section id="about" class="about">
+      <div class="container">
+        
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Мій підхід до роботи</h2>
+          <p class="section-subtitle">Основні принципи та цінності в консультуванні</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Картка 1 -->
+          <div class="about-card">
+            <div class="about-icon">🔬</div>
+            <h3>Наукова доказовість</h3>
+            <p>Використовую лише методи з доведеною ефективністю (КПТ, майндфулнес та когнітивно-поведінковий підхід).</p>
+          </div>
+
+          <!-- Картка 2 -->
+          <div class="about-card">
+            <div class="about-icon">🤝</div>
+            <h3>Безпечний простір</h3>
+            <p>Гарантую повну конфіденційність, прийняття без засудження та бережливе ставлення до ваших почуттів.</p>
+          </div>
+
+          <!-- Картка 3 -->
+          <div class="about-card">
+            <div class="about-icon">🌱</div>
+            <h3>Орієнтир на результат</h3>
+            <p>Ми не просто обговорюємо проблеми, а будуємо конкретні кроки для покращення якості вашого життя.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- БЛОК 4: БЛОК "КНИГА" (BOOK SECTION)        -->
+    <!-- ========================================== -->
+    <section id="book" class="book">
+      <div class="container book-container">
+        
+        <!-- Ліва частина: Обкладинка / Прев'ю книги -->
+          <div class="hero-image-wrapper">
+  
+  <!-- 1. Відкриваємо посилання -->
+  <a href="https://book-ye.com.ua/nekhudozhnya-literatura/gumanitarni-nauky/psykholohiya/khaj-bude-doshch-psykholohichni-praktyky-shchob-pryjnyaty-skladnist-zhyttya/?srsltid=AYCX9vL41Z9DC2SxhHBIIiWa34mkn0ftJgDRbisiKbHSqw-Yyf61TKPw" target="_blank" class="image-card-link">
+    
+    <!-- 2. Картинка знаходиться ВСЕРЕДИНІ посилання -->
+    <div class="image-card">
+      <img src="книга.jpg" alt="Книга Хай буде дощ" class="hero-img">
+    </div>
+
+  <!-- 3. Закриваємо посилання ТІЛЬКИ ПІСЛЯ картки -->
+  </a>
+
+</div>
+
+        <!-- Права частина: Текст про книгу -->
+        <div class="book-content">
+          <span class="badge">Авторська книга</span>
+          <h2 class="section-title">Книга «Хай буде дощ»</h2>
+          <p class="book-text">
+            Це книга-провідник у світ власних емоцій та переживань. Вона допомагає зрозуміти себе під час життєвих штормів, навчитися проживати складні стани та знаходити внутрішню опору.
+          </p>
+          <ul class="book-list">
+            <li>Практичні вправи для самодопомоги</li>
+            <li>Приклади з реальної психотерапевтичної практики</li>
+            <li>Прості пояснення складних емоційних процесів</li>
+          </ul>
+          <button class="btn btn-primary js-open-modal">Замовити книгу</button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- БЛОК 5: БЛОК "ПОСЛУГИ" (SERVICES SECTION)  -->
+    <!-- ========================================== -->
+    <section id="services" class="services">
+      <div class="container">
+        
+        <div class="section-title-wrapper">
+          <h2 class="section-title">Послуги та консультації</h2>
+          <p class="section-subtitle">Оберіть формат роботи, який підходить саме вам</p>
+        </div>
+
+        <div class="services-grid">
+          
+          <!-- Послуга 1 -->
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Індивідуальна консультація</h3>
+              <span class="service-price">50 хв</span>
+            </div>
+            <p class="service-desc">Робота з тривожністю, депресивними станами, самооцінкою, особистими кордонами та вигоранням.</p>
+            <button class="btn btn-secondary js-open-modal">Записатися</button>
+          </div>
+
+          <!-- Послуга 2 -->
+          <div class="service-card featured">
+            <div class="featured-badge">Популярно</div>
+            <div class="service-header">
+              <h3>Парна терапія</h3>
+              <span class="service-price">80 хв</span>
+            </div>
+            <p class="service-desc">Вирішення конфліктів у стосунках, покращення комунікації, повернення довіри та близькості.</p>
+            <button class="btn btn-primary js-open-modal">Записатися</button>
+          </div>
+
+          <!-- Послуга 3 -->
+          <div class="service-card">
+            <div class="service-header">
+              <h3>Онлайн-центр Mindspace</h3>
+              <span class="service-price">Груповий формат</span>
+            </div>
+            <p class="service-desc">Участь у підтримуючих психологічних групах, лекціях та тренінгах від нашого центру.</p>
+            <button class="btn btn-secondary js-open-modal">Дізнатися більше</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ========================================== -->
+    <!-- БЛОК 6: КОНТАКТИ (CONTACTS SECTION)        -->
+    <!-- ========================================== -->
+    <section id="contacts" class="contacts">
+      <div class="container contacts-container">
+        
+        <div class="contacts-info">
+          <h2 class="section-title">Зв'язатися зі мною</h2>
+          <p class="contacts-text">Якщо у вас є запитання або ви хочете уточнити деталі перед записом — пишіть у зручний месенджер.</p>
+          
+          <div class="contact-links">
+            <a href="https://t.me" target="_blank" class="contact-item">
+              <span class="contact-icon">📱</span>
+              <span>Telegram: @milikovskyi</span>
+            </a>
+            <a href="mailto:example@mindspace.ua" class="contact-item">
+              <span class="contact-icon">✉️</span>
+              <span>Email: info@mindspace.ua</span>
+            </a>
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <span>Онлайн по всьому світу / Київ</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contacts-card">
+          <h3>Готові зробити перший крок?</h3>
+          <p>Перша консультація — це безпечний спосіб познайомитися та визначити цілі нашої роботи.</p>
+          <button class="btn btn-primary btn-full js-open-modal">Записатися зараз</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ========================================== -->
+  <!-- БЛОК 7: ПІДВАЛ САЙТУ (FOOTER)             -->
+  <!-- ========================================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Психолог Даниїл Міліковський. Усі права захищено.</p>
+      <p>Засновник онлайн-центру <strong>Mindspace</strong></p>
+    </div>
+  </footer>
+
+
+  <!-- ========================================== -->
+  <!-- БЛОК 8: МОДАЛЬНЕ ВІКНО ЗАПИСУ (MODAL)      -->
+  <!-- ========================================== -->
+  <div class="modal" id="booking-modal">
+    <!-- Підкладка (затемнення фону) -->
+    <div class="modal-overlay"></div>
+    
+    <!-- Сама віконна картка -->
+    <div class="modal-window">
+      <button class="modal-close" aria-label="Закрити">&times;</button>
+      <h2 class="modal-title">Запис на консультацію</h2>
+      <p class="modal-subtitle">Залиште свої дані, і я зв'яжуся з вами найближчим часом для узгодження часу.</p>
+      
+      <!-- Форма збору даних -->
+      <form class="booking-form" id="bookingForm">
+        
+        <div class="form-group">
+          <label for="name">Ваше ім'я</label>
+          <input type="text" id="name" required placeholder="Олександр">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Номер телефону або Telegram</label>
+          <input type="text" id="phone" required placeholder="+380 (99) 000-00-00 або @username">
+        </div>
+
+        <div class="form-group">
+          <label for="service">Оберіть послугу</label>
+          <select id="service">
+            <option value="individual">Індивідуальна консультація</option>
+            <option value="couple">Парна терапія</option>
+            <option value="book">Замовлення книги «Хай буде дощ»</option>
+            <option value="mindspace">Питання по центру Mindspace</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-full">Підтвердити запис</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Підключення файлу JS скриптів -->
+  <script src="script.js"></script>
+</body>
+</html>
